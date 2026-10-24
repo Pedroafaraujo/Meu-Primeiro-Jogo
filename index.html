@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#090d21">
+<title>Órbita — meu primeiro jogo</title>
+<link rel="stylesheet" href="style.css">
+<script src="game.js" defer></script>
+</head>
+<body>
+<main>
+<header><a class="brand" href="./">✦ ÓRBITA</a><span>SEU PRÓXIMO RECORDE COMEÇA AQUI</span></header>
+<section class="intro"><p class="eyebrow">UMA NAVE. INFINITAS POSSIBILIDADES.</p><h1>Encontre seu espaço.</h1><p>Desvie dos meteoros, colete estrelas e vá além.</p></section>
+<section class="game" aria-label="Jogo de nave">
+<div class="scoreboard"><div>PONTOS<strong id="score">0</strong></div><div>RECORDE<strong id="best">0</strong></div><button id="pause" aria-label="Pausar jogo" disabled>Pausar</button></div>
+<div class="arena">
+<canvas id="canvas" width="900" height="540" aria-label="Área do jogo. Use as setas ou A e D para mover a nave."></canvas>
+<div id="overlay" class="overlay"><div class="symbol">✦</div><p class="eyebrow" id="tag">PRONTO PARA DECOLAR?</p><h2 id="title">O universo espera.</h2><p id="message">Colete estrelas. Desvie dos meteoros.<br>Quanto mais longe, maior o desafio.</p><button class="primary" id="start">Jogar agora <span>↗</span></button></div>
+</div>
+<div class="controls"><span><kbd>←</kbd> <kbd>→</kbd> ou <kbd>A</kbd> <kbd>D</kbd> para mover</span><span><kbd>Espaço</kbd> para pausar</span><span class="touch-hint">No celular, arraste a nave com o dedo</span></div>
+</section>
+<footer><span>FEITO PARA EXPLORAR</span><span>HTML5 · Sem downloads · Só jogar</span></footer>
+<p id="announcement" class="sr-only" aria-live="polite"></p>
+</main>
+</body>
+</html>
